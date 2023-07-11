@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "fantasy", "Gill Sans", "Gill Sans MT", "Calibri", "Trebuchet MS",
+    sans-serif;
+  /* border: 1px solid lime; */
+}
+body {
+  background-image: url(./backgroud.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container-nav {
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+  min-width: 900px;
+}
+.menu,
+.signup {
+  display: inline-block;
+  justify-content: flex-end;
+  margin: 0 40px;
+  gap: 1rem;
+}
+.menu a,
+.signup a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18.5px;
+  transition: 0.4s;
+  padding: 10px 25px;
+  margin: 0 5px;
+  border-radius: 100px;
+}
+.menu a:hover,
+.signup a:hover {
+  background-color: #e74c14;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  padding: 16px 32px;
+  background-color: #212121;
+  border-bottom: 3px solid #e74c14;
+}
+
+.signup a {
+  border-radius: 0;
+  padding: 16px 24px;
+  border: 1px solid white;
+}
+.parentt {
+  height: 100vh;
+}
+.container {
+  position: relative;
+  width: fit-content;
+  left: 8%;
+  top: 20%;
+  /* border: 1px solid lime; */
+}
+
+.container h1 {
+  color: #050505;
+  font-size: 85px;
+  font-weight: 700;
+  text-align: center;
+  font-family: "monoton", sans-serif;
+  padding: 4%;
+  position: relative;
+  left: -6%;
+}
+
+.container p {
+  width: 700px;
+  font-size: 32px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+}
+.button {
+  position: relative;
+  left: 33%;
+  margin-top: 50px;
+}
+.button a {
+  text-decoration: none;
+  padding: 17px;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+  border-radius: 50px;
+  transition: 0.2s;
+  font-size: 26px;
+}
+.button a:hover {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}

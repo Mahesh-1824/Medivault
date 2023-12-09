@@ -26,21 +26,46 @@
         </div>
       </div>
     </nav>
-    <div class="about">
-      <h1>About &nbsp; Us</h1>
-      <p>
-        Welcome to MediVault, a secure and reliable platform that provides a
-        database to store all your medical reports in one place. We understand
-        that patients often struggle to keep track of their medical reports, and
-        that's why we have created this website to provide an easy-to-use
-        solution.
-        <br><br>
-        Our website allows users and hospitals to create accounts, where
-        hospitals can directly upload reports, and users can access them
-        anytime, anywhere. We believe that this platform has the potential to
-        revolutionize the way medical reports are managed and accessed, making
-        it a valuable addition to the healthcare industry.
-      </p>
+    <div class="header">
+    <div class="move"><h2>Explore our Organisation Availabilities </h2></div><br><br>
+    <div class="topics">
+      <div class="specialist">
+        <img src="ammahos.jpeg.jpg"
+  
+         alt="1">
+        <h3><a href="division.htm">Amma Hospital</a></h3>
+      </div>
+      <div class="specialist"><br>
+        <img src= "apolo.jpeg.jpg"  alt="2">
+        <h3><a href="division1.htm">Apollo Hospitals</a></h3>
+      </div>
+      
+ <div class="specialist">
+        <img src= "cmc.jpeg.jpg" alt="5">
+        <h3><a href="division3.html">C.M.C Hospitals</a></h3>
+      </div></div></div>
+ <div class="header">
+    
+    <div class="topics">
+ <div class="specialist">
+        <img src= "./best-hospitals-hyderabad-2.jpg" alt="6">
+        <h3><a href="division4.htm">Global Hospitals</a></h3>
+      </div> <div class="specialist">
+        <img src="./kims.jpeg.jpg" alt="7">
+        <h3><a href="division5.htm">KIMS </a></h3>
+      </div> 
+       <div class="specialist">
+        <img src="./stt.jpeg.jpg" alt="10" >
+        <h3><a href="division6.htm">St.Johns Medical Hospital</a></h3>
+      </div>
     </div>
-  </body>
+  </div>
+  <div class="header">
+    <div class="topics">
+     
+ <div class="specialist">
+        <img src="./Gandhi-Hospital-1-.jpg" alt=" 15">
+        <h3><a href="./division7.htm">Gandhi Hospitals</a></h3>
+      </div></div></div>
+</body>
 </html>

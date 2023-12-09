@@ -1,4 +1,17 @@
-<?php session_start(); ?>
+<?php
+	session_start();
+ 
+	if (!isset($_SESSION['id_org'])) {
+		header('location:login_admin.php');
+		exit();
+	}
+  if(time()-$_SESSION["login_time_stamp_org"] >3600)
+  {
+  session_unset();
+  session_destroy();
+  header("Location:login_admin.php");
+  }
+?>
 <?php
   include 'db.php';
   $orgid = $_SESSION['org_id'];

@@ -52,33 +52,89 @@ nav {
   border: 1px solid white;
 }
 
-body {
-  background-color: white;
-  background-image: url(./about_img.001.jpeg);
+body{
+  background-image:url(backgriund\ img.png);
   background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   background-position: center;
-  height: 100vh;
-}
-
-.about {
-  position: relative;
-  width: 50%;
-  top: 23%;
-  left: 7%;
+  background-size:cover;
+  height:980px;
+  }
+  
+  .header {
   text-align: center;
-}
-.about h1 {
-  font-size: 6rem;
-  font-weight: 700;
-  color: #181817;
-  margin-bottom: 3rem;
-  font-family: "monoton", sans-serif;
-}
-
-.about p {
-  font-size: 1.5rem;
-  color: #181817;
-  margin-bottom: 1rem;
-}
+  padding-left:10px;
+  margin-top: 50px;
+  
+  }
+  
+  .topics {
+    display: flex;
+    justify-content: center;
+  padding-left:10px;
+  padding-top:15px;
+  padding-bottom:20px;
+    padding-right:20px;
+    margin-top: 20px;
+  
+  }
+  .move {
+  
+    width: 800px;
+    height: 45px;
+    animation-delay: 2s;
+    padding: 50px;
+    position: relative;
+    animation: mymove 10s infinite;
+    animation-duration: 8s;
+    
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 1890px;}
+  }
+  
+  .specialist {
+    
+  margin:auto;
+    width: 300px;
+  height:185px;
+  }
+  
+  .specialist img {
+    width: 240px;
+  
+    height: 180px;
+    border-radius: 50%;
+    border:1px;
+  }
+  
+  .specialist h3 {
+    margin-top: 10px;
+  }
+  h2{
+  
+  color:rgb(36, 24, 24);
+  font-size:40px;
+  text-shadow:2px 7px 10px  rgb(100, 100, 231);
+  }
+  
+  
+  
+  .specialist a:link, .specialist a:visited {
+    background-color: rgb(51, 122, 122);
+    color: black;
+    border: 1px solid rgb(68, 61, 61);
+    border-radius: 5%;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .specialist a:hover, .specialist a:active {
+    border: 1px solid rgb(68, 61, 61);
+    border-radius: 5%;
+    background-color: rgb(58, 49, 49);
+    color: white;
+  }

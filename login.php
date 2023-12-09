@@ -1,3 +1,11 @@
+<?php
+	session_start();
+ 
+	if (isset($_SESSION['id'])) {
+		header('location:pat_mainpage.php');
+		exit();
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -66,7 +74,7 @@ keyboard_double_arrow_right
     </div>
    
     <?php
-      session_start();
+    //   session_start();
    echo "<div class='form-container'>";
      $conn = mysqli_connect('localhost','root','','healthcare');
      if(isset($_POST['submit'])){
@@ -84,7 +92,10 @@ keyboard_double_arrow_right
         if ($result->num_rows > 0) {
             while($row = $result->fetch_assoc()) {
                 if ($row["userid"]=== $Userid) {
+                   
                     if ($row["password"]=== md5($_POST["password"])){
+                        $_SESSION['id']=$row['userid'];
+                        $_SESSION["login_time_stamp"] = time();
                         echo"<script>window.location.href='pat_mainpage.php'</script>";   
                     } 
                     else{

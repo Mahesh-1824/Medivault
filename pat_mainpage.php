@@ -1,3 +1,17 @@
+<?php
+	session_start();
+ 
+	if (!isset($_SESSION['id'])) {
+		header('location:login.php');
+		exit();
+	}
+  if(time()-$_SESSION["login_time_stamp"] >3600)
+  {
+  session_unset();
+  session_destroy();
+  header("Location:login.php");
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

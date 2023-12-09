@@ -1,4 +1,17 @@
-<?php session_start(); ?>
+<?php
+	session_start();
+ 
+	if (!isset($_SESSION['id'])) {
+		header('location:login.php');
+		exit();
+	}
+  if(time()-$_SESSION["login_time_stamp"] >3600)
+  {
+  session_unset();
+  session_destroy();
+  header("Location:login.php");
+  }
+?>
 <?php
   include 'db.php';
 
@@ -160,5 +173,32 @@
       </form>
       <div id="responseMessage" class="message"></div>
     </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
+    <script>
+      const form = document.getElementById('appointmentForm');
+    const responseMessage = document.getElementById('responseMessage');
+
+    form.addEventListener('submit', function(event) {
+      // event.preventDefault(); 
+      
+      // Perform form validation
+      const doctorId = document.getElementById('doctorId').value;
+      const patientId = document.getElementById('patientId').value;
+      const hospitalName = document.getElementById('hospitalName').value;
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const date = document.getElementById('date').value;
+      const message = document.getElementById('message').value;
+
+      if (!doctorId || !patientId || !hospitalName || !name || !email || !phone || !date) {
+        responseMessage.textContent = 'Please fill in all required fields.';
+        return;
+      }
+      
+      // Send form data to the server (You need to implement the server-side handling)
+      // For this example, we'll just display a success message
+      responseMessage.textContent = 'Go to notifications to check the status of the appointment!';});
+    </script> -->
   </body>
 </html>

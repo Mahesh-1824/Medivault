@@ -1,4 +1,17 @@
-<?php session_start(); ?>
+<?php
+	session_start();
+ 
+	if (!isset($_SESSION['id_org'])) {
+		header('location:login_admin.php');
+		exit();
+	}
+  if(time()-$_SESSION["login_time_stamp_org"] >3600)
+  {
+  session_unset();
+  session_destroy();
+  header("Location:login_admin.php");
+  }
+?>
 <?php
 include 'db.php';
 
@@ -400,12 +413,6 @@ nav {
   padding: 16px 24px;
   border: 1px solid white;
 }
-/  
-      /* #label_1{
-        background-color:  #4caf50;
-        color: white;
-        padding:12px;
-      } */ */
     </style>
 </head>
 <body>

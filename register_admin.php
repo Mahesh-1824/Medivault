@@ -1,3 +1,11 @@
+<?php
+	session_start();
+ 
+	if (isset($_SESSION['id_org'])) {
+		header('location:org_mainpage.php');
+		exit();
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>

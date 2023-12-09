@@ -1,4 +1,18 @@
-<?php session_start(); ?>
+<?php
+	session_start();
+ 
+	if (!isset($_SESSION['id'])) {
+		header('location:login.php');
+		exit();
+	}
+  if(time()-$_SESSION["login_time_stamp"] >3600)
+  {
+  session_unset();
+  session_destroy();
+  header("Location:login.php");
+  }
+ 
+?>
 <?php
 include 'db.php';
 
@@ -438,13 +452,6 @@ if (isset($_POST['smit3'])) {
     td{
       height: 100px;
     }
-    /
-    /* #label_1{
-        background-color:  #4caf50;
-        color: white;
-        padding:12px;
-      } */
-    */
   </style>
 </head>
 
@@ -564,7 +571,7 @@ if (isset($_POST['smit3'])) {
     <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
       <div id="form_flex">
         <label for="search_query" id="form_label">Search:</label>
-        <input id="search_query" type="text" name="usr2" value="" placeholder="Enter User ID" />
+        <input id="search_query" type="text" name="usr2" value="" placeholder="Enter file name" />
         <input id="smitid2" type="submit" name="smit2" value="Go" onKeyPress="return keyPressed(event)">
       </div>
     </form>

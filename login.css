@@ -18,7 +18,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  
 }
 .container {
   display: flex;
@@ -43,7 +42,7 @@ body {
   font-family: "monoton", sans-serif;
   font-size: 50px;
   color: #fff;
-  left:-10px;
+  left: -10px;
 }
 .container .box-container .screen form .error-msg {
   margin: 10px 0;
@@ -104,7 +103,7 @@ body {
   cursor: pointer;
   transition: 0.2s;
   position: relative;
-  left:20px;
+  left: 20px;
 }
 
 .login_submit:hover {
@@ -159,7 +158,7 @@ body {
 #toggle-btn2 {
   display: flex;
   border-radius: 50px;
-  border: 3px solid rgb(226, 81, 23);
+
   background-color: rgb(230, 86, 29);
   overflow: hidden;
   width: 180px;
@@ -172,14 +171,13 @@ body {
   top: 110px;
   left: 16%;
   -webkit-user-select: none;
-  
 }
 .solid2,
 .line2 {
   color: #fff;
   padding: 10px;
+  /* border: 3px solid green; */
   background-color: rgb(230, 86, 29);
-  
 }
 .line2 {
   color: black;
@@ -200,12 +198,11 @@ body {
   top: 110px;
   left: 16%;
   -webkit-user-select: none;
-  
 }
 .solid1 {
   color: rgb(226, 81, 23);
   background-color: #fff;
-  
+
   padding: 10px;
 }
 .line1 {
@@ -218,14 +215,13 @@ input:focus {
   outline: none;
 }
 
-a{
+a {
   text-decoration: none;
-  
 }
 
-.material-symbols-outlined{
+.material-symbols-outlined {
   position: relative;
-  bottom:38px;
-  left:200px;
+  bottom: 38px;
+  left: 200px;
   font-size: 39px;
 }

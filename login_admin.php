@@ -1,4 +1,11 @@
-<?php session_start(); ?>
+<?php
+	session_start();
+ 
+	if (isset($_SESSION['id_org'])) {
+		header('location:org_mainpage.php');
+		exit();
+	}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -86,6 +93,8 @@ keyboard_double_arrow_right
             while($row = $result->fetch_assoc()) {
                 if ($row["userid"]=== $Userid) {
                     if ($row["password"]=== md5($_POST["password"])){
+                        $_SESSION['id_org']=$row['userid'];
+                        $_SESSION["login_time_stamp_org"] = time();
                  echo"<script>window.location.href='org_mainpage.php'</script>";  
               
                     } 

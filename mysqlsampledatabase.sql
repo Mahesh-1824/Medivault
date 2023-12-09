@@ -17,7 +17,7 @@ CREATE TABLE `healthcare`.`docdoings`(
   `orgid` VARCHAR(50) NOT NULL ,
   `patientid` VARCHAR(50) NOT NULL ,
   `datapdf` MEDIUMBLOB NOT NULL ,
-  `whenup` DATE DEFAULT CURRENT_TIMESTAMP,
+ `whenup` DATE DEFAULT CURRENT_TIMESTAMP,
   `priid` INT(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY(priid)
   );

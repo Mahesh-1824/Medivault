@@ -44,14 +44,14 @@
         <i class="fa fa-regular fa-envelope" style="font-size: 52px"></i>
         <h2>Email</h2>
         <p>Send us your queries by Email</p>
-        <p style="font-weight: 400">210020040@iitdh.ac.in</p>
+        <p style="font-weight: 400">bl.en.u4aie22xyz@students.amrita.edu</p>
       </div>
       <div class="sub">
         <i class="fa fa-solid fa-map" style="font-size: 52px"></i>
         <h2>Reach out</h2>
         <h3>( Monday to Friday 9:00 am to 3:00 pm IST)</h3>
-        <p>Indian Institutute of technology Dharwad</p>
-        <p>Dharwad , Karnataka</p>
+        <p>Amrita College of Engineering</p>
+        <p>Bengaluru , Karnataka</p>
       </div>
     </div>
   </body>
